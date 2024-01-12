@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<head>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.540">
 
-<meta charset="utf-8" />
-<meta name="generator" content="quarto-1.4.540" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>quarto</title>
@@ -58,7 +56,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-<!-- htmldependencies:E3FAD763 -->
+
+<script src="histogram_files/libs/clipboard/clipboard.min.js"></script>
+<script src="histogram_files/libs/quarto-html/quarto.js"></script>
+<script src="histogram_files/libs/quarto-html/popper.min.js"></script>
+<script src="histogram_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="histogram_files/libs/quarto-html/anchor.min.js"></script>
+<link href="histogram_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="histogram_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="histogram_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="histogram_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="histogram_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -67,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-</div>
+<div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://mybinder.org/v2/gh/vonw/quarto/HEAD?urlpath=vscode" target="_blank"><i class="bi bi-journals"></i>Launch Binder</a></li></ul></div></div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -90,17 +98,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <section id="quarto" class="level2">
-<h2>Quarto</h2>
+<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
 <p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
-<div id="5cd1a74f" class="cell" data-execution_count="1">
-<div class="sourceCode" id="cb1"><pre class="sourceCode python cell-code"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<div id="fe104f3c" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.hist(np.random.randn(<span class="dv">10000</span>), bins<span class="op">=</span>np.arange(<span class="op">-</span><span class="dv">4</span>,<span class="dv">4</span>,<span class="fl">0.25</span>))</span></code></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
-<pre><code>(array([  0.,   2.,   4.,   3.,  18.,  41.,  59.,  92., 169., 278., 385.,
-        510., 700., 838., 953., 968., 992., 902., 832., 679., 516., 380.,
-        248., 210., 100.,  58.,  28.,  25.,   7.,   2.,   0.]),
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.hist(np.random.randn(<span class="dv">10000</span>), bins<span class="op">=</span>np.arange(<span class="op">-</span><span class="dv">4</span>,<span class="dv">4</span>,<span class="fl">0.25</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>(array([  1.,   5.,   0.,   8.,  23.,  35.,  82., 101., 161., 262., 403.,
+        526., 648., 779., 916., 986., 970., 936., 830., 704., 561., 395.,
+        258., 175., 106.,  74.,  27.,  13.,   5.,   4.,   4.]),
  array([-4.  , -3.75, -3.5 , -3.25, -3.  , -2.75, -2.5 , -2.25, -2.  ,
         -1.75, -1.5 , -1.25, -1.  , -0.75, -0.5 , -0.25,  0.  ,  0.25,
          0.5 ,  0.75,  1.  ,  1.25,  1.5 ,  1.75,  2.  ,  2.25,  2.5 ,
@@ -109,8 +117,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="cell-output cell-output-display">
 <div>
-<figure>
-<p><img src="histogram_files/figure-html/cell-2-output-2.png" width="583" height="404" /></p>
+<figure class="figure">
+<p><img src="histogram_files/figure-html/cell-2-output-2.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -119,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </main>
 <!-- /main column -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -503,6 +511,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 
-</body>
 
-</html>
+
+
+</body></html>
